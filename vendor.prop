@@ -156,7 +156,6 @@ ro.vendor.audio.soundtrigger.hist.duration=1500
 sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
 # Radio
-DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 persist.vendor.radio.apm_sim_not_pwdn=0
