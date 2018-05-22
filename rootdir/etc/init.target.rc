@@ -51,6 +51,7 @@ on init
     write /sys/block/sdf/queue/nr_requests 256
     write /sys/block/dm-0/queue/read_ahead_kb 2048
     write /sys/block/dm-1/queue/read_ahead_kb 2048
+    write /sys/block/dm-2/queue/read_ahead_kb 2048
 
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
     write /dev/stune/top-app/schedtune.sched_boost_no_override 1
@@ -79,6 +80,10 @@ on fs
     swapon_all /vendor/etc/fstab.qcom
     restorecon_recursive /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
+
+on late-fs
+    # Boot time FS tune
+    write /sys/block/dm-3/queue/read_ahead_kb 2048
 
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
@@ -222,7 +227,9 @@ on property:init.svc.vendor.hwcomposer-2-3=restarting
     stop ppd
 
 on property:sys.boot_completed=1
-    # Run time FS tune
+    # Runtime FS tuning: as we have init boottime setting and kernel patch setting
+    # default readahead to 2048KB. We should adjust the setting upon boot_complete
+    # for runtime performance
     write /sys/block/sda/queue/read_ahead_kb 1024
     write /sys/block/sda/queue/nr_requests 128
     write /sys/block/sda/queue/iostats 1
@@ -231,5 +238,8 @@ on property:sys.boot_completed=1
     write /sys/block/sdf/queue/iostats 1
     write /sys/block/dm-0/queue/read_ahead_kb 512
     write /sys/block/dm-1/queue/read_ahead_kb 512
+    write /sys/block/dm-2/queue/read_ahead_kb 512
+    write /sys/block/dm-3/queue/read_ahead_kb 512
     write /sys/block/sda/queue/scheduler deadline
     write /sys/block/sdf/queue/scheduler deadline
+
