@@ -108,6 +108,9 @@ on fs
 
     restorecon /dev/block/platform/soc/1d84000.ufshc/by-name/TA
 
+on fs
+    mkdir /persist/data 0700 system system
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
@@ -585,6 +588,8 @@ on post-fs-data
     # Create vpp directory
     mkdir /data/vendor/vpp 0770 media media
 
+    # Create /data/time folder for time-services
+
     start vendor.netmgrd
     start vendor.port-bridge
 
@@ -810,10 +815,11 @@ on property:ro.vendor.iocgrp.config=1
     write /dev/blkio/blkio.weight 1000
     write /dev/blkio/bg/blkio.weight 100
 
+    mkdir /persist/time 0770 system system
+
 # Set bdi ratio to 1 for external sdcard
 on property:sys.boot_completed=1
     write /sys/class/block/mmcblk0/bdi/max_ratio 1
-
     # SONY: Enable wakeup irq module
     write /sys/devices/platform/wakeup_debug.0/enable 1
 
