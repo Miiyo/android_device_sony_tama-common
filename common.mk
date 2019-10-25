@@ -599,7 +599,7 @@ PRODUCT_PACKAGES += \
     RcsService
 
 PRODUCT_SYSTEM_PROPERTIES += \
-    persist.rcs.supported=0
+    persist.rcs.supported=1
 
 # RIL
 PRODUCT_VENDOR_PROPERTIES += \
