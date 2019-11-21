@@ -69,3 +69,4 @@ debug.hwui.skia_atrace_enabled=false
 ro.telephony.default_network=33,33
 ro.telephony.sim_slots.count=2
 telephony.active_modems.max_count=2
+ro.telephony.iwlan_operation_mode=legacy
