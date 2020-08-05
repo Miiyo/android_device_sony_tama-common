@@ -939,9 +939,6 @@ on property:vold.decrypt=trigger_restart_framework
     start vendor.netmgrd
     start vendor.port-bridge
 
-on property:persist.env.fastdorm.enabled=true
-    setprop persist.radio.data_no_toggle 1
-
     # USB Fast Charge
     write /sys/kernel/fast_charge/force_fast_charge 1
 
