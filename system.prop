@@ -32,6 +32,7 @@ debug.sf.latch_unsignaled=1
 sdm.debug.disable_inline_rotator=1
 vendor.display.disable_rotator_downscale=1
 sdm.debug.disable_inline_rotator_secure=1
+debug.performance.tuning=1
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
