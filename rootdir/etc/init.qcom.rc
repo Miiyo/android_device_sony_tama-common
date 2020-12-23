@@ -436,6 +436,11 @@ on boot
     chmod 0660 /sys/class/leds/vibrator/activate
     #exec u:r:charge_osv_daemon:s0 root -- /vendor/bin/charge_lrc_osv.sh
 
+on property:vendor.post_boot.parsed=1
+    # Report max frequency to unity tasks.
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
 # msm specific files that need to be created on /data
 on post-fs-data
     #Create DATAQTI dir for logs
