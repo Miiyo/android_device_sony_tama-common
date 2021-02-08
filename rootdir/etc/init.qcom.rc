@@ -923,13 +923,7 @@ service qcom-c_main-sh /vendor/bin/init.class_main.sh
     class main
     user root
     oneshot
-
-service vendor.power /vendor/bin/hw/android.hardware.power-service-qti
-    override
-    class hal
-    user system
-    group system input
-
+    
 on property:vold.decrypt=trigger_restart_framework
     start qcom-c_main-sh
     start wcnss-service
