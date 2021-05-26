@@ -367,6 +367,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.sony_sdm845-libperfmgr \
+    android.hardware.power.stats@1.0-service.mock \
     android.hardware.power@1.3.vendor
 
 PRODUCT_COPY_FILES += \
