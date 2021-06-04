@@ -1329,11 +1329,6 @@ on property:ro.logdumpd.enabled=1
 on property:ro.vendor.radio.noril=*
     setprop ro.radio.noril ${ro.vendor.radio.noril}
 
-#service seemp_healthd /vendor/bin/seemp_healthd
-#    class late_start
-#    user system
-#    group system
-
 service vendor.port-bridge /vendor/bin/port-bridge
     class main
     user radio
