@@ -9,6 +9,9 @@ ro.config.vc_call_vol_steps=11
 # Bluetooth
 persist.bluetooth.avrcpversion=avrcp16
 
+# Blurs
+ro.surface_flinger.supports_background_blur=0
+
 # Charger
 ro.charger.enable_suspend=true
 
