@@ -12,9 +12,10 @@ ro.audio.resampler.psd.halflength=960
 ro.audio.resampler.psd.cutoff_percent=98
 ro.audio.resampler.psd.tbwcheat=0
 persist.bluetooth.sbc_hd_higher_bitrate=1
-
-# Bluetooth
 persist.bluetooth.avrcpversion=avrcp16
+
+# Blurs
+ro.surface_flinger.supports_background_blur=0
 
 # Brightness Curve
 persist.sys.brightness.low.gamma=true
