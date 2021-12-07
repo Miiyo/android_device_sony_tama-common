@@ -27,6 +27,9 @@ ro.vendor.use_data_netmgrd=true
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
+# DHA Tunning
+ro.config.dha_tunnable=1
+
 # Graphics
 debug.sf.enable_hwc_vds=0
 debug.sf.auto_latch_unsignaled=true
@@ -47,6 +50,13 @@ ro.vendor.qti.va_aosp.support=1
 # Wireless display
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
+
+# Smoothens UI
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
+
+# Venom
+ro.surface_flinger.running_without_sync_framework=true
 
 #hwui properties
 ro.hwui.texture_cache_size=72
