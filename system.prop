@@ -4,6 +4,7 @@ audio.offload.min.duration.secs=30
 audio.offload.video=true
 ro.af.client_heap_size_kbyte=7168
 ro.config.media_vol_steps=25
+ro.config.alarm_vol_steps=15
 ro.config.vc_call_vol_steps=11
 
 # Bluetooth
