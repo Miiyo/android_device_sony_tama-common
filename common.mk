@@ -631,6 +631,13 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# ParanoidDoze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sensor.pickup=pick_gesture
+    
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init.tama_kddi.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.tama_kddi.nfc.rc
 
