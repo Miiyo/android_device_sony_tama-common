@@ -1221,6 +1221,9 @@ vendor/lib64/libdevice_security_vendor.so
 vendor/lib64/libsuntory.so
 vendor/lib64/vendor.somc.hardware.security.secd@1.0.so
 
+# RADIO - from nio_retcn - RRN31.Q3-1-11-6/f81cc
+vendor/lib64/deviceInfoServiceModule.so|c7d4021528f3a43320d0f109a9ed5f765a6a92a2
+
 # SECD firmware
 vendor/etc/firmware/tzsuntory.b00
 vendor/etc/firmware/tzsuntory.b01
