@@ -91,3 +91,6 @@ ro.config.sdha_apps_bg_min=8
 debug.renderengine.backend=skiaglthreaded
 debug.hwui.renderer=skiagl
 renderthread.skia.reduceopstasksplitting=true 
+
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
