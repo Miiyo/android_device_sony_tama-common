@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The Android Open Source Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.protonaosp.deviceconfig.overlay.tama">
+
+    <application android:hasCode="false" android:allowBackup="false"/>
+    <overlay
+      android:targetPackage="org.protonaosp.deviceconfig"
+      android:isStatic="true"
+      android:priority="1"/>
+</manifest>
