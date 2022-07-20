@@ -10,3 +10,11 @@ pm.sleep_mode=1
 
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
+
+# IORap
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+ro.iorapd.enable=false
+vendor.iop.enable_prefetch_ofr=0
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+
