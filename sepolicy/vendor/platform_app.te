@@ -1,0 +1,7 @@
+allow platform_app sysfs_fps:file { getattr open read };
+allow platform_app sysfs_graphics:dir search;
+
+# System Info
+allow platform_app sysfs_battery_supply:dir { search };
+allow platform_app sysfs_kgsl:file { read open getattr ioctl };
+allow platform_app sysfs_battery_supply:file { read open getattr ioctl };
