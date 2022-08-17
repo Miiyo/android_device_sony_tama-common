@@ -215,6 +215,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libqdMetaData \
     libtinyxml \
+    libtinyxml.vendor \
     memtrack.sdm845 \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
