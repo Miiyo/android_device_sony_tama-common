@@ -30,6 +30,7 @@ dalvik.vm.dex2oat64.enabled=true
 debug.sf.enable_hwc_vds=0
 debug.sf.latch_unsignaled=1
 sdm.debug.disable_inline_rotator=1
+debug.sf.disable_client_composition_cache=1
 vendor.display.disable_rotator_downscale=1
 sdm.debug.disable_inline_rotator_secure=1
 
