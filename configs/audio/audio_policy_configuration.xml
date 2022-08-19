@@ -215,10 +215,7 @@
                        sources="primary output,deep_buffer,compressed_offload,voip_rx"/>
             </routes>
         </module>
-
-        <!-- A2DP Input Audio HAL -->
-        <xi:include href="a2dp_in_audio_policy_configuration.xml"/>
-
+        
         <!-- Usb Audio HAL -->
         <module name="usb" halVersion="2.0">
             <mixPorts>
