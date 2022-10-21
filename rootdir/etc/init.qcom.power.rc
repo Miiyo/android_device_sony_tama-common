@@ -298,3 +298,7 @@ service vendor.poweroffm64 /vendor/bin/poweroffm64
     class late_start
     oneshot
     seclabel u:r:poweroffm64:s0
+
+on charger
+    chown system system /sys/class/leds/white/brightness
+    write /sys/class/leds/white/brightness 255
