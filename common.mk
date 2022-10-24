@@ -140,7 +140,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio@2.1-impl \
     audio.bluetooth.default \
-    libldacBT_bco \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
@@ -154,6 +153,17 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
+
+# Bluetooth Library Deps
+PRODUCT_PACKAGES += \
+    libbluetooth_audio_session \
+    libbthost_if.vendor \
+    libldacBT_bco \
+    libldacBT_bco.vendor \
+    liblhdc \
+    liblhdcBT_enc \
+    liblhdcdec \
+    liblhdcBT_dec
 
 # Camera
 PRODUCT_PACKAGES += \
