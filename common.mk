@@ -162,6 +162,10 @@ PRODUCT_PACKAGES += \
     liblhdcdec \
     liblhdcBT_dec
 
+PRODUCT_PACKAGES += \
+    libldacBT_enc \
+    libldacBT_abr
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
