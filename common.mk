@@ -314,8 +314,8 @@ PRODUCT_PACKAGES += \
     libgui_shim
 
 PRODUCT_SYSTEM_PROPERTIES += \
-    camera.disable_zsl_mode=1 \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
+    camera.disable_zsl_mode=true \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,co.aospa.sense
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.charger.enable_suspend=true
