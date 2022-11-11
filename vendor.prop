@@ -97,6 +97,8 @@ persist.bluetooth.a2dp_offload.disabled=false
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 ro.bluetooth.a2dp_offload.supported=true
 vendor.qcom.bluetooth.soc=cherokee
+persist.bt.enableAptXHD=true
+persist.service.btui.use_aptx=1
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
