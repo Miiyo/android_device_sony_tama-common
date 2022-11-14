@@ -35,7 +35,7 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Graphics
 debug.sf.enable_hwc_vds=0
-debug.sf.latch_unsignaled=1
+debug.sf.auto_latch_unsignaled=true
 debug.sf.disable_client_composition_cache=1
 debug.renderengine.backend=skiaglthreaded
 sdm.debug.disable_inline_rotator=1
