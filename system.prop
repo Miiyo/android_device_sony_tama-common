@@ -29,7 +29,7 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Graphics
 debug.sf.enable_hwc_vds=0
-debug.sf.latch_unsignaled=0
+debug.sf.auto_latch_unsignaled=true
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
