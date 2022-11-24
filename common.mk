@@ -421,8 +421,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0 \
     android.hidl.allocator@1.0.vendor \
-    android.hidl.base@1.0 \
-    android.hidl.base@1.0.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -507,10 +505,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
-# Memory optimizations
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.vendor.qti.sys.fw.bservice_enable=true
-
 # Native libraries whitelist
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -567,17 +561,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
-
-# QC framework value-adds
-PRODUCT_ODM_PROPERTIES += \
-    ro.vendor.qti.va_odm.support=1
-
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.vendor.qti.va_aosp.support=1
-
-# QTI
-PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect.vendor
 
 # QTI Common
 TARGET_COMMON_QTI_COMPONENTS += \
@@ -662,13 +645,6 @@ PRODUCT_PACKAGES += \
     libwfdaac_vendor \
     libavservices_minijail_vendor \
     libavservices_minijail.vendor
-
-# Zygote
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.device_config.runtime_native.usap_pool_enabled=true
-
-PRODUCT_VENDOR_PROPERTIES += \
-    zygote.critical_window.minute=10
 
 # Phantom process monitoring
 PRODUCT_VENDOR_PROPERTIES += \
