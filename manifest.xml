@@ -255,6 +255,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
         <fqname>@2.0::ISensors/default</fqname>
+        <fqname>@2.1::ISensors/default</fqname>
+        <fqname>@2.1::ISensorManager/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
