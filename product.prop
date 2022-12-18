@@ -18,3 +18,5 @@ vendor.iop.enable_prefetch_ofr=0
 iorapd.perfetto.enable=false
 iorapd.readahead.enable=false
 
+# FS-verity
+ro.apk_verity.mode=2
