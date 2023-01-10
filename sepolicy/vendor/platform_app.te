@@ -5,3 +5,6 @@ allow platform_app sysfs_graphics:dir search;
 allow platform_app sysfs_battery_supply:dir { search };
 allow platform_app sysfs_kgsl:file { read open getattr ioctl };
 allow platform_app sysfs_battery_supply:file { read open getattr ioctl };
+
+# Launcher3
+allow platform_app sysfs_zram:dir search;
