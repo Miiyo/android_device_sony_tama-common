@@ -1,0 +1,2 @@
+# Launcher3
+allow platform_app sysfs_zram:dir search;
