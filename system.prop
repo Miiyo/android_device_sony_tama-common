@@ -16,6 +16,9 @@ persist.bluetooth.sbc_hd_higher_bitrate=1
 # Bluetooth
 persist.bluetooth.avrcpversion=avrcp16
 
+# Brightness Curve
+persist.sys.brightness.low.gamma=true
+
 # Charger
 ro.charger.enable_suspend=true
 
