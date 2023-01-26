@@ -12,6 +12,9 @@ persist.bluetooth.avrcpversion=avrcp16
 # Blurs
 ro.surface_flinger.supports_background_blur=0
 
+# Brightness Curve
+persist.sys.brightness.low.gamma=true
+
 # Charger
 ro.charger.enable_suspend=true
 
