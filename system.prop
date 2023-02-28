@@ -44,7 +44,6 @@ dalvik.vm.dex2oat-threads=8
 debug.sf.enable_hwc_vds=0
 debug.sf.auto_latch_unsignaled=true
 debug.sf.disable_client_composition_cache=1
-debug.renderengine.backend=skiaglthreaded
 sdm.debug.disable_inline_rotator=1
 vendor.display.disable_rotator_downscale=1
 sdm.debug.disable_inline_rotator_secure=1
@@ -68,3 +67,6 @@ arm64.memtag.process.system_server=off
 
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
+
+# OpenGL
+debug.hwui.renderer=opengl
