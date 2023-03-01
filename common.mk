@@ -191,7 +191,8 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     qns.fstab \
     sensor_json_transfer.sh \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    ueventd.tama.rc
 
 # Configure dex2oat
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -292,6 +293,10 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
+
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.tama
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
