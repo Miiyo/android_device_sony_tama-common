@@ -15,13 +15,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Overlays
 PRODUCT_PACKAGES += \
-    TamaCarrierConfigOverlay \
     TamaFrameworksOverlay \
     TamaSettingsOverlay \
     TamaSettingsProviderOverlay \
     TamaSystemUIOverlay \
-    TamaTelephonyOverlay \
-    TetheringConfigOverlay \
     WifiOverlay \
     SonyOpenTelephony
 
@@ -50,8 +47,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
     frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
-    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
-    frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
     frameworks/native/data/etc/android.hardware.camera.ar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.ar.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
@@ -72,12 +67,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.proximity.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml \
-    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
-    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
-    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
-    frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
-    frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
     frameworks/native/data/etc/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.xml \
     frameworks/native/data/etc/android.hardware.vulkan.level-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level-0.xml \
     frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level-1.xml \
@@ -89,13 +78,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/android.software.opengles.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
-    frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
-
-# Perf
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.extension_library=libqti-perfd-client.so
 
 # Smoothens UI
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -245,40 +229,17 @@ PRODUCT_PRODUCT_PROPERTIES += \
 sys.fflag.override.settings_seamless_transfer=true
 
 # Bluetooth
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth.a2dp@1.0 \
-    android.hardware.bluetooth.audio@2.1-impl \
-    audio.bluetooth.default \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor
-
 PRODUCT_SYSTEM_PROPERTIES += \
 persist.bluetooth.avrcpversion=avrcp16
 
 PRODUCT_VENDOR_PROPERTIES += \
-    bluetooth.device.class_of_device=90,2,12 \
     bluetooth.hardware.power.operating_voltage_mv=3300 \
-    bluetooth.profile.a2dp.source.enabled?=true \
-    bluetooth.profile.avrcp.target.enabled?=true \
     bluetooth.profile.bas.client.enabled?=true \
-    bluetooth.profile.gatt.enabled?=true \
-    bluetooth.profile.hfp.ag.enabled?=true \
-    bluetooth.profile.hid.device.enabled?=true \
-    bluetooth.profile.hid.host.enabled?=true \
-    bluetooth.profile.map.server.enabled?=true \
-    bluetooth.profile.opp.enabled?=true \
-    bluetooth.profile.pan.nap.enabled?=true \
-    bluetooth.profile.pan.panu.enabled?=true \
-    bluetooth.profile.pbap.server.enabled?=true \
-    bluetooth.profile.sap.server.enabled?=true \
     persist.bluetooth.a2dp_offload.disabled=false \
     persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true \
     persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
     ro.bluetooth.a2dp_offload.supported=true \
-    vendor.qcom.bluetooth.soc=cherokee \
-    persist.bt.enableAptXHD=true \
-    persist.service.btui.use_aptx=1
+    vendor.qcom.bluetooth.soc=cherokee
 
 # Boot control
 PRODUCT_PACKAGES += \
@@ -310,11 +271,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
     android.hardware.camera.device@3.4.vendor \
-    android.hardware.camera.provider@2.4.vendor \
-    libgui_shim
+    android.hardware.camera.provider@2.4.vendor
 
 PRODUCT_SYSTEM_PROPERTIES += \
-    camera.disable_zsl_mode=true \
+    camera.disable_zsl_mode=1 \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,co.aospa.sense
 
 PRODUCT_VENDOR_PROPERTIES += \
@@ -324,10 +284,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=Qualcomm \
     ro.soc.model=SDM845
-
-# CNE
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.cne.feature=1
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -339,9 +295,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Data modules
 PRODUCT_SYSTEM_PROPERTIES += \
-    persist.data.df.dev_name=rmnet_usb0 \
-    persist.vendor.data.mode=concurrent \
-    ro.vendor.use_data_netmgrd=true
+    persist.data.df.dev_name=rmnet_usb0
 
 # Common init scripts
 PRODUCT_PACKAGES += \
@@ -357,8 +311,6 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.sensors.sh \
     init.qcom.sh \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
     init.recovery.qcom.rc \
     init.target.rc \
     qns.fstab \
@@ -388,38 +340,11 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
     SystemUI
 
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.3-service \
-    android.hardware.graphics.mapper@2.0-impl-qti-display \
-    android.hardware.graphics.allocator@3.0-impl \
-    android.hardware.graphics.allocator@4.0-impl  \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    gralloc.sdm845 \
-    hwcomposer.sdm845 \
-    libdisplayconfig.qti \
-    libdisplayconfig.system.qti \
-    libqdMetaData \
-    libqdMetaData.system \
-    libtinyxml \
-    libtinyxml.vendor \
-    memtrack.sdm845 \
-    vendor.display.config@1.0.vendor \
-    vendor.display.config@2.0 \
-    vendor.qti.hardware.display.allocator@1.0-service
-
-# Display post-processing
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.display.cabl=2 \
-    vendor.display.enable_default_color_mode=1
-
 # DPM
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.vendor.dpm.feature=11 \
     persist.vendor.dpm.loglevel=0
 
 PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.dpm.idletimer.mode=default \
     persist.vendor.dpmhalservice.enable=1
     
 # DRM
@@ -458,21 +383,17 @@ PRODUCT_PACKAGES += \
 
 # Graphics
 PRODUCT_SYSTEM_PROPERTIES += \
-    debug.sf.enable_hwc_vds=0 \
     debug.sf.auto_latch_unsignaled=true \
     debug.sf.disable_client_composition_cache=1 \
     debug.hwui.use_hint_manager=true \
     debug.hwui.target_cpu_time_percent=30
 
 PRODUCT_VENDOR_PROPERTIES += \
-    debug.egl.hw=0 \
-    debug.sf.hw=0 \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=sdm845 \
     ro.opengles.version=196610 \
     vendor.display.disable_rotator_downscale=1 \
     persist.demo.hdmirotationlock=false \
-    persist.sys.sf.native_mode=0 \
     ro.surface_flinger.has_wide_color_display=true \
     ro.surface_flinger.has_HDR_display=true \
     ro.surface_flinger.use_color_management=true \
@@ -516,18 +437,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.vendor.ims.disableUserAgent=0
 
 PRODUCT_VENDOR_PROPERTIES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1 \
     persist.vendor.ims.disableADBLogs=1 \
     persist.vendor.ims.disableDebugLogs=1 \
     persist.vendor.ims.disableIMSLogs=1 \
     persist.vendor.ims.disableQXDMLogs=1
-
-# IPA
-PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -610,11 +523,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(shell find $(LOCAL_PATH)/modem-config -type f -printf '%p:$(TARGET_COPY_OUT_VENDOR)/modemconf/%P\n')
 
-# Net
-PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor \
-    netutils-wrapper-1.0
-
 # Netflix custom property
 PRODUCT_VENDOR_PROPERTIES += \
     ro.netflix.bsp_rev=Q845-14477-1
@@ -645,10 +553,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.nfc.port=I2C
 
-# Power
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.0.vendor
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
@@ -676,20 +580,17 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist.xml \
-    $(LOCAL_PATH)/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-qti.xml \
-    $(LOCAL_PATH)/permissions/system_ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml
-
-# Radio
-PRODUCT_PACKAGES += \
-    android.hardware.radio.config@1.3.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    libjson \
-    librmnetctl
-
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.radio.enableadvancedscan=false
+# QTI Common
+TARGET_COMMON_QTI_COMPONENTS += \
+    av \
+    bt \
+    display \
+    overlay \
+    perf \
+    telephony \
+    usb \
+    vibrator \
+    wfd
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -702,11 +603,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # RIL
 PRODUCT_VENDOR_PROPERTIES += \
-    ril.subscription.types=NV,RUIM \
-    persist.vendor.radio.apm_sim_not_pwdn=0 \
-    persist.vendor.radio.sib16_support=1 \
-    persist.vendor.radio.custom_ecc=1 \
-    persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.wait_for_pbm=1 \
     persist.vendor.radio.mt_sms_ack=19 \
     persist.vendor.radio.add_power_save=1 \
@@ -715,9 +611,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.radio.do_not_use_oprt_db=true \
     persist.vendor.radio.oem_socket=true \
     persist.vendor.radio.report_codec=1 \
-    persist.vendor.radio.ims_call_transfer=true \
-    persist.vendor.radio.procedure_bytes=SKIP \
-    telephony.lteOnCdmaDevice=0
+    persist.vendor.radio.ims_call_transfer=true
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -741,33 +635,6 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 USE_DEX2OAT_DEBUG := false
 
-# Telephony
-PRODUCT_PACKAGES += \
-    ims-ext-common \
-    ims_ext_common.xml \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
-
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.usb.diag.func.name=diag \
-    vendor.usb.dpl.inst.name=dpl \
-    vendor.usb.qdss.inst.name=qdss \
-    vendor.usb.rmnet.func.name=gsi \
-    vendor.usb.rmnet.inst.name=rmnet \
-    vendor.usb.rndis.func.name=gsi \
-    vendor.usb.use_ffs_mtp=0 \
-    vendor.usb.use_gadget_hal=0
-
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
@@ -776,11 +643,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl \
-    android.hardware.vibrator@1.0-service
 
 # WiFi
 PRODUCT_PACKAGES += \
@@ -798,14 +660,9 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libnl \
     libwfdaac_vendor \
-    libavservices_minijail \
     libavservices_minijail_vendor \
     libavservices_minijail.vendor
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # Zygote
 PRODUCT_SYSTEM_PROPERTIES += \

@@ -33,9 +33,6 @@ function blob_fixup() {
             sed -i "s/\/system\/bin\/sony-modem-switcher/\/vendor\/bin\/sony-modem-switcher/" "${2}"
             sed -i -r 's/persist\.somc\.cust\.modem(0|1)/persist.vendor.somc.sim\1/' "${2}"
             ;;
-        product/lib64/lib-imsvideocodec.so)
-            grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
-            ;;
     esac
 }
 
