@@ -657,23 +657,24 @@ vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/librs_adreno.so
 vendor/lib/librs_adreno_sha1.so
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libQTapGLES.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libRSDriver_adreno.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libbccQTI.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
+
+# Graphics (Adreno) - from LA.UM.9.3.r1-02700-sdm845.0
+vendor/lib64/egl/eglSubDriverAndroid.so|d6dc70f08a0e68e897c2c8a956a8c2f3e036c540
+vendor/lib64/egl/libEGL_adreno.so|5d517d4b294073bf2773b8223a59c3b4827fd26c
+vendor/lib64/egl/libGLESv1_CM_adreno.so|0a2a648ca2dcd887ea62860bbfa2ef397f01d42d
+vendor/lib64/egl/libGLESv2_adreno.so|366d1e8188e583ae6a923a37f9318b38ad88c7ff
+vendor/lib64/egl/libq3dtools_adreno.so|189b9c3d400c6a98c87582b8df0910530cba6d44
+vendor/lib64/egl/libq3dtools_esx.so|2799b3480cd2c08532ab58b20fe7829e5628a1ac
+vendor/lib64/libC2D2.so|175115cc36fd471f9eb83af76be21b5f602b9460
+vendor/lib64/libCB.so|e41ce1d944691107ef081b1d618a4c7d82680416
+vendor/lib64/libOpenCL.so|ee804e05a12dffd74f98a426d00039a8cfcb5662
+vendor/lib64/libVkLayer_q3dtools.so|b5a0185f857bb35eb200bf3964fcf7b368dac1f2
+vendor/lib64/libadreno_utils.so|50916234ddd7ec94540c18747f9c0e80bae29b84
+vendor/lib64/libc2d30_bltlib.so|b7c7bbc41f317833927d9bf75fbf9b411dd63a96
+vendor/lib64/libgpudataproducer.so|b6084218f08ca019b4121d5c4346c8cf56d58535
+vendor/lib64/libgsl.so|b22d3ff79e080a834e67e2103f8b90c6a5c10a2d
+vendor/lib64/libllvm-glnext.so|696e4a70a6bed9eb9efb8f76ee463f00ca3b4da6
+vendor/lib64/libllvm-qcom.so|79164daddbfb3c9c7b31933d7dfe144ddf2c858d
 vendor/lib64/librs_adreno.so
 vendor/lib64/librs_adreno_sha1.so
 
@@ -686,8 +687,8 @@ vendor/firmware/a630_zap.b02
 vendor/firmware/a630_zap.mdt
 
 # Graphics (Vulkan)
-vendor/lib/hw/vulkan.sdm845.so
-vendor/lib64/hw/vulkan.sdm845.so
+vendor/lib/hw/vulkan.adreno.so
+vendor/lib64/hw/vulkan.adreno.so|7fe53628fbaf5a4c866fd82c6254021d670c7d83
 
 # Hotword enrollment
 -product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk|1cbc6ae6490cfc6e16619773809b9afcc9998f91;PRESIGNED
