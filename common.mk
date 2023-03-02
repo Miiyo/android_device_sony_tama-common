@@ -14,8 +14,16 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+PRODUCT_PACKAGES += \
+    TamaCarrierConfigOverlay \
+    TamaFrameworksOverlay \
+    TamaSettingsOverlay \
+    TamaSettingsProviderOverlay \
+    TamaSystemUIOverlay \
+    TamaTelephonyOverlay \
+    TetheringConfigOverlay \
+    WifiOverlay \
+    SonyOpenTelephony
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -739,10 +747,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-# Tethering
-PRODUCT_PACKAGES += \
-    TetheringConfigOverlay
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
@@ -777,7 +781,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-qcom \
     libwpa_client \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
