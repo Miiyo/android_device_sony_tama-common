@@ -68,3 +68,9 @@ arm64.memtag.process.system_server=off
 
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
+
+# Enable ADB Debugging 
+ro.adb.secure=0
+persist.sys.usb.config=mtp,adb
+persist.service.debuggable=1
+persist.service.adb.enable=1
