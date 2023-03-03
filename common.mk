@@ -405,7 +405,7 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
-    android.hardware.sensors@2.0.vendor \
+    android.hardware.sensors@2.1.vendor \
     libsensorndkbridge
 
 # Speed profile services and wifi-service to reduce RAM and storage.
