@@ -45,8 +45,7 @@
         "1459200",
         "1286400",
         "1209600",
-        "825600",
-        "0"
+        "825600"
       ],
       "ResetOnInit": true
     },
@@ -267,13 +266,13 @@
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "825600"
+      "Value": "1209600"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "576000"
+      "Value": "1132800"
     },
     {
       "PowerHint": "INTERACTION",
