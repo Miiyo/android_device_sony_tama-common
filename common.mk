@@ -363,6 +363,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     NfcNci \
+    libchrome.vendor \
     SecureElement \
     Tag
 
