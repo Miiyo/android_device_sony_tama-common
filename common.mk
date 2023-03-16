@@ -111,7 +111,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.soundtrigger@2.2-impl \
     audio.r_submix.default \
-    audio.usb.default \
+    audio.usbv2.default \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
