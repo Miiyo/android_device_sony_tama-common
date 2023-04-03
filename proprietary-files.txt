@@ -1338,11 +1338,11 @@ vendor/lib64/libthermal_engine.so
 -vendor/lib64/libthermalclient.so
 vendor/lib64/vendor.semc.hardware.thermal@1.0.so
 
-# Time services
-vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
-vendor/lib/libtime_genoff.so
-vendor/lib64/libtime_genoff.so
+# Time services - from PNX - RKQ1.200906.002
+vendor/app/TimeService/TimeService.apk|2e5301dbe5f494c90f602577478f59e0452506b8
+vendor/bin/time_daemon|e62d164b8c8b30743837896d4c5e8bca39b364e6
+vendor/lib/libtime_genoff.so|9f1e0fd1180207b3df81aa65c319b0d5a467d74c
+vendor/lib64/libtime_genoff.so|3f57de1aeb7aa113a0a579cebed85ab4405b9b49
 
 # Trusted Execution Environment connector - from PNX - RKQ1.200906.002
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|f8dc88c7166ffc2c1d997e7d5f16a8eb69c37cfc
