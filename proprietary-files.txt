@@ -451,7 +451,6 @@ vendor/lib64/vendor.qti.latency@2.0.so
 
 # Configstore - from OnePlus6 - RKQ1.201217.002/2111252325
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|8a64779e1a5df5153f10871cf23c65c3f7f94ae7
-vendor/etc/configstore/vpp.configstore.xml|d5095f33c326017a21fff186d19a2ce146b85d94
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|3e517ec6b4603c6c1f5945b3f131aa69bccb0b08
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|eb1a99915765fca7add8de87d7c4ef9bf031e155
@@ -906,41 +905,37 @@ system/lib64/libFileMux.so
 system/lib64/libmmosal.so
 system/lib64/libmmparser_lite.so
 system/lib64/vendor.somc.hardware.swiqi@1.0.so
-vendor/bin/vppservice
-vendor/etc/init/vppservice.rc
 vendor/lib/libFileMux_proprietary.so
-vendor/lib/libOmxDsdDec.so
-vendor/lib/libOmxMux_proprietary.so
-vendor/lib/libOmxVideoDSMode.so
-vendor/lib/libOmxVpp.so
-vendor/lib/libdsd2pcm.so
 vendor/lib/libmmosal_proprietary.so
 vendor/lib/libmmparser_lite_proprietary.so
 vendor/lib/libpfter.so
 vendor/lib/libswiqisettinghelper.so
-vendor/lib/libswvdec.so
-vendor/lib/libvppclient.so
-vendor/lib/libvpphcp.so
-vendor/lib/libvpphvx.so
-vendor/lib/libvpplibrary.so
-vendor/lib/vendor.qti.hardware.vpp@1.1.so
-vendor/lib/vendor.qti.hardware.vpp@1.2.so
 vendor/lib/vendor.somc.hardware.swiqi@1.0-impl.so
 vendor/lib/vendor.somc.hardware.swiqi@1.0.so
-vendor/lib64/libOmxVpp.so
 vendor/lib64/libmmosal_proprietary.so
 vendor/lib64/libmmparser_lite_proprietary.so
 vendor/lib64/libpfter.so
 vendor/lib64/libswiqisettinghelper.so
-vendor/lib64/libswvdec.so
-vendor/lib64/libvppclient.so
-vendor/lib64/libvpphcp.so
-vendor/lib64/libvpphvx.so
-vendor/lib64/libvpplibrary.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.somc.hardware.swiqi@1.0-impl.so
 vendor/lib64/vendor.somc.hardware.swiqi@1.0.so
+
+# VPP - from OnePlus6 - RKQ1.201217.002/2111252325
+vendor/bin/vppservice|eb1d668979c9e3dd487ac6131b5a36f70ba38d54
+vendor/etc/configstore/vpp.configstore.xml|d5095f33c326017a21fff186d19a2ce146b85d94
+vendor/etc/init/vppservice.rc|9daea1a00124d65ecb6978936785273edb74a8ed
+vendor/lib/libswvdec.so|b9fa357d0f2a507f9fb571af9af11f104eeaeabe
+vendor/lib/libvppclient.so|10bb06c41665304d582d56b57a188bb452f50b58
+vendor/lib/libvpphcp.so|226176e9b08c931fc857c51eccb9a29aabaf5a00
+vendor/lib/libvpphvx.so|4803da671b8d90d5cdb93f8c2011966e92141eb1
+vendor/lib/libvpplibrary.so|1080e9667d7e9072c84fd12de27abc8c31f97896
+vendor/lib/vendor.qti.hardware.vpp@1.1.so|8df356bc93951b2072590ff17c5d7af08b4e8299
+vendor/lib/vendor.qti.hardware.vpp@1.2.so|edd5e3b33c51c31c8e9e54912269e893c4e3c730
+vendor/lib64/libvppclient.so|00ddeef7e54e1bb3025be74aa95647ab7196026c
+vendor/lib64/libvpphcp.so|8e20b26195b5ae79fa4b26faf7d47de27cac33f4
+vendor/lib64/libvpphvx.so|f60a0dc45c410d63ff4825f5519fdb365f5700ea
+vendor/lib64/libvpplibrary.so|1f1b5e254048502df3d2160c569263cda0ea3c80
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so|f7769685d9c0c74f8c8419db028a5d5c3f65a9da
+vendor/lib64/vendor.qti.hardware.vpp@1.2.so|ca1906012d0ab6dc9048aa49703833512308e6cf
 
 # Media codecs
 vendor/lib/libAlacSwDec.so
@@ -954,12 +949,17 @@ vendor/lib/libOmxAmrDec.so
 vendor/lib/libOmxAmrwbplusDec.so
 vendor/lib/libOmxApeDec.so
 vendor/lib/libOmxApeDecSw.so
+vendor/lib/libOmxDsdDec.so
 vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxG711Dec.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxSwVdec.so
 vendor/lib/libOmxSwVencMpeg4.so
+vendor/lib/libOmxVideoDSMode.so
+vendor/lib/libOmxVpp.so
+vendor/lib/libdsd2pcm.so
 vendor/lib/libOmxWmaDec.so
+vendor/lib/libOmxMux_proprietary.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libFlacSwDec.so
@@ -976,7 +976,9 @@ vendor/lib64/libOmxG711Dec.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxSwVdec.so
 vendor/lib64/libOmxSwVencMpeg4.so
+vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
+vendor/lib64/libswvdec.so
 
 # MiscTA
 vendor/bin/hw/vendor.somc.hardware.miscta@1.0-service
