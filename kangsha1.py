@@ -6,6 +6,7 @@ import fileinput
 
 vendor = "sony"
 device = "tama-common-kddi"
+kanged = "" # Add the fingerprint from the device that you took the blobs
 vendor_path = f"../../../vendor/{vendor}/{device}/proprietary"
 
 def list_sections():
@@ -36,8 +37,11 @@ for line in fileinput.input("proprietary-files.txt", inplace=True):
     if line.startswith("#"):
         section = line[1:].strip()
         section_found = section == sys.argv[1]
-        print()
-        print(line)
+        if section_found:
+            print(f"{line} - from {kanged}")
+        else:
+            print()
+            print(line)
     elif not line:
         if section_found:
             print()
