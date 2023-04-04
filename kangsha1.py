@@ -20,7 +20,7 @@ def list_sections():
 
 if len(sys.argv) == 1:
     print("Please enter a section name to display its files.")
-    print("Usage: ./kangsha1.py [SECTION NAME]")
+    print('Usage: ./kangsha1.py ["SECTION NAME"]')
     print("You can also run 'python kangsha1.py list' to list available sections.")
     sys.exit(1)
 
@@ -34,10 +34,10 @@ for line in fileinput.input("proprietary-files.txt", inplace=True):
     line = line.strip()
     if line.startswith("#"):
         section = line[1:].strip()
-        section_found = section == sys.argv[1]
+        section_found = section == sys.argv[1].strip('"')
         if section_found:
             print()
-            print(f"{line} - from {kanged}")
+            print(f'{line} - from {kanged}')
         else:
             print()
             print(line)
