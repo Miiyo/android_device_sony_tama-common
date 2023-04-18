@@ -21,3 +21,7 @@ persist.audio.fluence.voicecomm u:object_r:vendor_audio_prop:s0
 
 # PowerHAL
 vendor.powerhal.           u:object_r:vendor_power_prop:s0
+
+# Bluetooth
+ro.bluetooth.ftm_enabled       u:object_r:vendor_bluetooth_prop:s0
+ro.bluetooth.hfp.ver           u:object_r:vendor_bluetooth_prop:s0

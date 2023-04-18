@@ -26,3 +26,5 @@ set_prop(vendor_init, cust_system_prop)
 allow vendor_init sysfs_ssr_toggle:file w_file_perms;
 
 allow vendor_init self:capability kill;
+
+set_prop(vendor_init, vendor_bluetooth_prop)
