@@ -725,6 +725,10 @@ vendor/bin/ims_rtp_daemon|2c995a884bbde9f37a44a10ac8fb694b30af97ea
 vendor/bin/imsdatadaemon|eb09aed86816127ef752c07c027d3ede9000f549
 vendor/bin/imsqmidaemon|72f9810942d727b7608a96dc481346ec3c97b9c6
 vendor/bin/imsrcsd|c4a5cf31cda60ab50955631538cddd1e7fa1d844
+vendor/etc/init/ims_rtp_daemon.rc|06510e936890f51aeb76f2cf3ed5dbe45e67ac20
+vendor/etc/init/imsdatadaemon.rc
+vendor/etc/init/imsqmidaemon.rc
+vendor/etc/init/imsrcsd.rc|2dc42ff6e4b6dd389bd3bc9a7af30dec2f1a45df
 vendor/etc/seccomp_policy/imsrtp.policy|7ea8b4012da7bde98fc91bd882185b32784793cc
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so|193fc19943985cca25fa46eeaa12381f00f03648
 vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so|4ad6ddf1f5d6721e21aa8bd3ecdb32379eaa3eb4
@@ -755,6 +759,7 @@ vendor/lib64/vendor.qti.hardware.radio.ims@1.5.so|39a9fa5ff488dd1a9ded4118af386b
 vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so|4ce26ee33ffc6bf6cfb5dcf71ec19335a6c3f066
 vendor/lib64/vendor.qti.ims.callcapability@1.0.so|ec61e1e11d39a4ffebfb168b81af51fb504d939d
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so|576674bce3f3cf8de1f37114edf6da629b670cf5
+vendor/lib64/vendor.qti.ims.factory@1.0.so|8bf7ccc549c820f2cea7e39925ee29612a5aefe7
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|bddca6b11f462b1ca04be211558d676c8e45d1d8
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|bddca6b11f462b1ca04be211558d676c8e45d1d8
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so|5a045ddcfe58845e0f0a447b4a0ecf5b29a56b64
@@ -1070,6 +1075,7 @@ vendor/lib/libpdnotifier.so|2b7465113bc5a73af45f4129cbab592316f96f19
 vendor/lib/libqcrilFramework.so|87591c14c000754b81435acf1a9987660c414514
 vendor/lib/libqrtr.so|545d74fb62d03ecf834d9374e95620598d38ee3b
 vendor/lib/libqsocket.so|c4cbaa2f1137630798f8a32ef03265b4f48893a3
+vendor/lib/libril-qc-logger.so|6bec67ce24c2f124d4fa5995a7183f375c016c37
 vendor/lib/libril-qc-hal-qmi.so|1bcb162121841a4e1b0c416a76f104b22e2870bd
 vendor/lib/libril-qc-logger.so|6bec67ce24c2f124d4fa5995a7183f375c016c37
 vendor/lib/libril-qc-ltedirectdisc.so|e4564c8bc8aa54da7e60f524eb7958af409c2502
@@ -1096,6 +1102,7 @@ vendor/lib64/libpdnotifier.so|d83c75a6c3833cd8379e05177a4f14191e15282c
 vendor/lib64/libqcrilFramework.so|da3c0216ddad60f48b1fc90b31a6d6d1114e95be
 vendor/lib64/libqrtr.so|6f7abe88e19e44f6b933de1cac0c7a3437318f04
 vendor/lib64/libqsocket.so|391748e46f7dbbf267dbc5a5c89f0d2a8b4fca4e
+vendor/lib64/libril-qc-logger.so|ee79a6c722389ac5cec23348e6f484f093f38896
 vendor/lib64/libril-qc-hal-qmi.so|14dda5bc33440106c2d7eb9826549a0ec1aab5cf
 vendor/lib64/libril-qc-logger.so|ee79a6c722389ac5cec23348e6f484f093f38896
 vendor/lib64/libril-qc-ltedirectdisc.so|c278b3a5403b6c96019645663f21f583dfcee33d
