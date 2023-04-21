@@ -1040,7 +1040,6 @@ system_ext/framework/qti-telephony-common.jar|041d8a45cdc4b80fa16a47289b9767da83
 # RIL (vendor) - from PNX - RKQ1.200906.002
 -vendor/app/IWlanService/IWlanService.apk|92168bf713f66a400122e7357f981be106cde39e
 vendor/bin/hw/qcrild|3eea6728924507e6200a2a58c827bf1235eba28f
-vendor/bin/ATFWD-daemon|9b61dc74e23392110b6716e4a1558e2468f344de
 vendor/bin/adpl|4ee2aa7fb4363ddfcacf67800e61e5b68aedae20
 vendor/bin/netmgrd|992c77d8e35527245e97fd1ff1aff16ef2ad0bc3
 vendor/bin/pd-mapper|66d35617c8bfbe43f369431d8c2cfdac4ed104de
