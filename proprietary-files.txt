@@ -1042,12 +1042,12 @@ vendor/lib/com.qualcomm.qti.ant@1.0.so
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
-# RIL (system) - from LA.QSSI.13.0.r1-09000-qssi.0
--system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|9ef9e77f209b7d699d0b37463acfb19faf46d6d4
+# RIL (system) - from LA.QSSI.13.0.r1-09700-qssi.0
+-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|38701f94dca753199cbff47b338a71851a3280bf
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
-system_ext/framework/qcrilhook.jar|8d44048c04f4d38a6bf6a279e3bceface10c0dde
-system_ext/framework/qti-telephony-common.jar|041d8a45cdc4b80fa16a47289b9767da833f5b94
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|231862ec524e39c96b8b4575f27060caa36ce36b
+-system_ext/framework/qcrilhook.jar|8d44048c04f4d38a6bf6a279e3bceface10c0dde
+-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|e3cf3ab60bf632270eccc4e99ead89254d3d84ab
+-system_ext/framework/qti-telephony-common.jar|8d94e50a8dc3e796e3a4c78cefdf6903bf1a524e
 
 # RIL (vendor) - from PNX - RKQ1.200906.002
 -vendor/app/IWlanService/IWlanService.apk|92168bf713f66a400122e7357f981be106cde39e
