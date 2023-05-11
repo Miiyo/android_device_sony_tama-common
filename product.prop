@@ -20,3 +20,11 @@ pm.sleep_mode=1
 
 # FS-verity
 ro.apk_verity.mode=2
+
+# Audio
+persist.vendor.audio.button_jack.profile=volume
+persist.vendor.audio.button_jack.switch=0
+persist.vendor.audio.fluence.speaker=false
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicecomm=true
+persist.vendor.audio.fluence.voicerec=false

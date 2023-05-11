@@ -1,11 +1,5 @@
 # Audio
 af.fast_track_multiplier=1
-persist.vendor.audio.button_jack.profile=volume
-persist.vendor.audio.button_jack.switch=0
-persist.vendor.audio.fluence.speaker=false
-persist.vendor.audio.fluence.voicecall=true
-persist.vendor.audio.fluence.voicecomm=true
-persist.vendor.audio.fluence.voicerec=false
 persist.vendor.audio.ras.enabled=false
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
