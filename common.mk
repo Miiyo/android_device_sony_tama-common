@@ -392,9 +392,8 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.sony_sdm845-libperfmgr \
-    android.hardware.power.stats@1.0-service.mock \
-    android.hardware.power@1.3.vendor
+    android.hardware.power-service.pixel-libperfmgr \
+    android.hardware.power.stats@1.0-service.pixel
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -452,6 +451,7 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/google/interfaces \
     hardware/google/pixel
 
 # Speed profile services and wifi-service to reduce RAM and storage.
