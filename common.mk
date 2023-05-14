@@ -452,7 +452,13 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/sony \
     hardware/google/pixel
+
+# Sony Battery Care
+PRODUCT_PACKAGES += \
+    vendor.sony.charger \
+    vendor.sony.charger-service
 
 # Speed profile services and wifi-service to reduce RAM and storage.
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
@@ -522,3 +528,7 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.max_virtual_display_dimension=4096
+
+# XperiaStuff
+PRODUCT_PACKAGES += \
+    XperiaParts
