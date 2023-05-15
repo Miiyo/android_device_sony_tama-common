@@ -1,2 +1,5 @@
 # QC framework value-adds
 ro.vendor.qti.va_odm.support=1
+
+# Dolby
+ro.vendor.sony.effect.dolby_atmos=true
