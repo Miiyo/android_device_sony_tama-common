@@ -45,7 +45,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 
     <carrier_config>
         <boolean name="apn_expand_bool" value="true" />
-        <boolean name="world_phone_bool" value="false" />
+        <boolean name="world_phone_bool" value="true" />
         <boolean name="allow_adding_apns_bool" value="true" />
         <boolean name="hide_preferred_network_type_bool" value="false" />
         <boolean name="show_cdma_choices_bool" value="false" />
@@ -97,14 +97,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 
         <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
 
-        <!-- Enable VoLTE and VoWifi -->
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_vt_available_bool" value="true" />
-	    <boolean name="carrier_wfc_ims_available_bool" value="true" />
-
-        <boolean name="hide_lte_plus_data_icon_bool" value="false"/>
-	    <int name="lte_plus_threshold_bandwidth_khz_int" value="0"/>
-        
         <!-- Enable SS over UT by default-->
         <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
 
@@ -273,6 +265,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 
     <carrier_config mcc="214" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
+	<boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_mode_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="214" mnc="03">
@@ -1589,8 +1583,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_transfer_ims_call_bool" value="false" />
         <boolean name="carrier_video_crs_supported_bool" value="true" />
         <boolean name="carrier_call_progress_notification" value="true" />
-        <boolean name="transmit_static_image" value="true"/>
-        <boolean name="show_static_image_ui" value="true"/>
         <string-array name="carrier_support_video_service_numbers" num="2">
             <item value="0532100860086"/>
             <item value="0201008616"/>
@@ -1698,8 +1690,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_transfer_ims_call_bool" value="false" />
         <boolean name="carrier_video_crs_supported_bool" value="true" />
         <boolean name="carrier_call_progress_notification" value="true" />
-        <boolean name="transmit_static_image" value="true"/>
-        <boolean name="show_static_image_ui" value="true"/>
         <string-array name="carrier_support_video_service_numbers" num="2">
             <item value="0532100860086"/>
             <item value="0201008616"/>
@@ -1884,8 +1874,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_transfer_ims_call_bool" value="false" />
         <boolean name="carrier_video_crs_supported_bool" value="true" />
         <boolean name="carrier_call_progress_notification" value="true" />
-        <boolean name="transmit_static_image" value="true"/>
-        <boolean name="show_static_image_ui" value="true"/>
         <string-array name="carrier_support_video_service_numbers" num="2">
             <item value="0532100860086"/>
             <item value="0201008616"/>
@@ -1952,8 +1940,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_transfer_ims_call_bool" value="false" />
         <boolean name="carrier_video_crs_supported_bool" value="true" />
         <boolean name="carrier_call_progress_notification" value="true" />
-        <boolean name="transmit_static_image" value="true"/>
-        <boolean name="show_static_image_ui" value="true"/>
         <string-array name="carrier_support_video_service_numbers" num="2">
             <item value="0532100860086"/>
             <item value="0201008616"/>
