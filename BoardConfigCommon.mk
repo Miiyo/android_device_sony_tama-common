@@ -104,7 +104,7 @@ WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config/config.fs
 
 # Graphics
 TARGET_USES_EGL_DISPLAY_ARRAY := true
@@ -117,8 +117,8 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x04000000
@@ -140,11 +140,11 @@ TARGET_USES_MKE2FS := true
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Properties
-TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
-TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+TARGET_ODM_PROP += $(COMMON_PATH)/configs/props/odm.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/configs/props/product.prop
+TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/configs/props/system_ext.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/props/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/props/vendor.prop
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
