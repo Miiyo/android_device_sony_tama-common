@@ -110,6 +110,7 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 ro.vendor.display.cabl=2
 debug.sf.disable_backpressure=1
 debug.sf.disable_client_composition_cache=1
+service.sf.prime_shader_cache=0
 
 # DPM
 persist.vendor.dpm.idletimer.mode=default
