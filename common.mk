@@ -26,7 +26,8 @@ PRODUCT_PACKAGES += \
     TamaSettingsProviderOverlay \
     TamaSystemUIOverlay \
     TamaTelephonyOverlay \
-    TetheringConfigOverlay \
+    ModemConfig \
+    TetheringOverlay \
     WifiOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -283,14 +284,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.sony_sdm845 \
@@ -438,10 +431,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \
